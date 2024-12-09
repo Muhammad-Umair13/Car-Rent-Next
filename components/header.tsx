@@ -7,36 +7,6 @@ import { GoHeartFill } from "react-icons/go";
 import { GoBellFill } from "react-icons/go";
 import { IoMdSettings } from "react-icons/io";
 
-
-export const First_Label = () => {
-  return (
-    <div className="w-full h-[141px] p-8 flex justify-between max-lg:hidden">
-      <div className="flex items-center gap-2 ">
-        <span><Image src="/Icons/bulk.svg" alt='bulk' width={32} height={32} /></span>
-        <span className='font-bold text-[32px]'>High Fidelity Dashboard - Home Rent</span>
-      </div>
-      <div className='flex items-center'>
-        <span className='font-medium text-xl'>Last Updated:</span>
-        <span className='font-bold text-xl'>8 Aug 2022</span>
-      </div>
-    </div>
-  )
-}
-
-export const Second_Label = () => {
-  return (
-    <div className="w-full h-[141px] p-8 flex justify-between max-lg:hidden">
-      <div className="flex items-center gap-2">
-        <span><Image src="/Icons/bulk.svg" alt='bulk' width={32} height={32} /></span>
-        <span className='font-bold text-[32px]'>High Fidelity Dashboard - Detail Car</span>
-      </div>
-      <div className='flex items-center'>
-        <span className='font-medium text-xl'>Last Updated:</span>
-        <span className='font-bold text-xl'>8 Aug 2022</span>
-      </div>
-    </div>
-  )
-}
 const header = () => {
   return (
     <div>

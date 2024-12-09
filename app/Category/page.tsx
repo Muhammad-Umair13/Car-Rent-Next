@@ -1,5 +1,3 @@
-import React from 'react';
-import Header, { Second_Label } from "../../components/header";
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 import { LuArrowUpDown } from "react-icons/lu";
@@ -11,11 +9,9 @@ import { SiTraccar } from "react-icons/si";
 const Category = () => {
     return (
         <div>
-            <Second_Label />
-            <Header />
             <div className="flex">
                 <div>
-                    <div className="w-72 p-6 bg-gray-100 max-md:hidden">
+                    <div className="w-72 p-6 max-lg:hidden">
                         <div className="mb-8">
                             <h3 className="text-[10px]  mb-4 text-[#90A3BF]">TYPE</h3>
                             <ul className="space-y-2">
@@ -84,14 +80,13 @@ const Category = () => {
                     </div>
                 </div>
 
-                <div>
-                    <div className="flex items-center justify-center py-16 px-3">
-                        <div className="flex items-center rounded-lg shadow-lg bg-gray-100">
+                <div className="bg-gray-100">
+                    <div className="flex items-center justify-center py-16 px-3 max-md:px-0">
+                        <div className="flex items-center rounded-lg shadow-lg lg:flex-col">
                             {/* Pick-Up Section */}
-                            <div
-                                className="flex flex-col space-y-2 p-3 bg-gray-100 rounded-lg shadow-sm ">
+                            <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                                 <div className="text-lg font-semibold text-blue-600">Pick-Up</div>
-                                <div className="flex gap-8">
+                                <div className="flex flex-wrap gap-8">
                                     <div>
                                         <label className="block text-gray-500 text-sm mb-1">Locations</label>
                                         <select
@@ -122,17 +117,16 @@ const Category = () => {
                             </div>
 
                             {/* Switch Button */}
-                            <div className="flex items-center justify-center mx-6">
+                            <div className="flex items-center justify-center mx-6 mt-4 lg:mt-0">
                                 <button className="bg-blue-600 text-white rounded-xl p-4 shadow-lg hover:bg-blue-700">
                                     <LuArrowUpDown />
                                 </button>
                             </div>
 
                             {/* Drop-Off Section */}
-                            <div
-                                className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-gray-100">
+                            <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                                 <div className="text-lg font-semibold text-blue-600">Drop-Off</div>
-                                <div className="flex gap-8">
+                                <div className="flex flex-wrap gap-8">
                                     <div>
                                         <label className="block text-gray-500 text-sm mb-1">Locations</label>
                                         <select
@@ -164,13 +158,14 @@ const Category = () => {
                         </div>
                     </div>
 
-                    <section className="text-gray-600 body-font w-[78%] ml-20">
+
+                    <section className="text-gray-600 body-font w-[78%] ml-20 max-lg:m-0 max-md:ml-20">
                         <div className="container mx-auto">
-                            <div className="flex justify-between -m-4">
+                            <div className="flex justify-between -m-4 lg:flex-row max-md:flex-col">
 
                                 {/* Box 1 */}
-                                <div className="p-4" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                <div className="p-4" style={{ width: '300px', height: '388px' }}>
+                                    <a href="/Detail"><div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">Koenigsegg</h2>
                                             <span>
@@ -194,12 +189,12 @@ const Category = () => {
                                             <p className="text-gray-900 text-lg font-medium">$99.00/day</p>
                                             <button className="ml-4 text-white bg-blue-500 border-0 py-2 px-4 focus:outline-none hover:bg-blue-600 rounded">Rent Now</button>
                                         </div>
-                                    </div>
+                                    </div></a>
                                 </div>
 
                                 {/* Box 2 */}
-                                <div className="p-4" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                <div className="p-4" style={{ width: '300px', height: '388px' }}>
+                                    <a href="/Detail"><div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">Nissan GT-R</h2>
                                             <span>
@@ -224,11 +219,12 @@ const Category = () => {
                                             <button className="ml-4 text-white bg-blue-500 border-0 py-2 px-4 focus:outline-none hover:bg-blue-600 rounded">Rent Now</button>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
 
                                 {/* Box 3 */}
-                                <div className="p-4 w-[304px] h-[388px]">
-                                    <div className="border rounded-lg p-4">
+                                <div className="p-4 w-[300px] h-[388px]">
+                                    <a href="/Detail"><div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">Rolls-Royce</h2>
                                             <span>
@@ -253,11 +249,12 @@ const Category = () => {
                                             <button className="ml-4 text-white bg-blue-500 border-0 py-2 px-4 focus:outline-none hover:bg-blue-600 rounded">Rent Now</button>
                                         </div>
                                     </div>
+                                    </a>
                                 </div>
 
                                 {/* Box 4 */}
-                                <div className="p-4 hidden" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                <div className="p-4 hidden" style={{ width: '300px', height: '388px' }}>
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">Nissan GT-R</h2>
                                             <span>
@@ -288,11 +285,11 @@ const Category = () => {
                         </div>
 
                         <div className="container mx-auto mt-5">
-                            <div className="flex justify-between -m-4">
+                            <div className="flex justify-between -m-4 lg:flex-row max-md:flex-col">
 
                                 {/* Box 1 */}
-                                <div className="p-4" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                <div className="p-4" style={{ width: '300px', height: '388px' }}>
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">All New Rush</h2>
                                             <span>
@@ -320,8 +317,8 @@ const Category = () => {
                                 </div>
 
                                 {/* Box 2 */}
-                                <div className="p-4" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                <div className="p-4" style={{ width: '300px', height: '388px' }}>
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">CR -V</h2>
                                             <span>
@@ -350,7 +347,7 @@ const Category = () => {
 
                                 {/* Box 3 */}
                                 <div className="p-4 w-[304px] h-[388px]">
-                                    <div className="border rounded-lg p-4">
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">All New Terios</h2>
                                             <span>
@@ -378,8 +375,8 @@ const Category = () => {
                                 </div>
 
                                 {/* Box 4 */}
-                                <div className="p-4 hidden" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                <div className="p-4 hidden" style={{ width: '300px', height: '388px' }}>
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">CR -V</h2>
                                             <span>
@@ -410,11 +407,11 @@ const Category = () => {
                         </div>
 
                         <div className="container mx-auto">
-                            <div className="flex justify-between -m-4">
+                            <div className="flex justify-between -m-4 lg:flex-row max-md:flex-col">
 
                                 {/* Box 1 */}
                                 <div className="p-4" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">MG ZX Exclusice</h2>
                                             <span>
@@ -443,7 +440,7 @@ const Category = () => {
 
                                 {/* Box 2 */}
                                 <div className="p-4" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">New MG ZS</h2>
                                             <span>
@@ -472,7 +469,7 @@ const Category = () => {
 
                                 {/* Box 3 */}
                                 <div className="p-4 w-[304px] h-[388px]">
-                                    <div className="border rounded-lg p-4">
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">MG ZS Excite</h2>
                                             <span>
@@ -501,7 +498,7 @@ const Category = () => {
 
                                 {/* Box 4 */}
                                 <div className="p-4 hidden" style={{ width: '304px', height: '388px' }}>
-                                    <div className="border rounded-lg p-4">
+                                    <div className="border rounded-lg p-4 bg-white">
                                         <div className="flex justify-between">
                                             <h2 className="text-gray-900 title-font text-lg font-medium">New MG ZS</h2>
                                             <span>

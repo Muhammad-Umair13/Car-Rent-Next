@@ -1,5 +1,3 @@
-import Header, { First_Label } from "../components/header";
-
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 import { LuArrowUpDown } from "react-icons/lu";
@@ -12,8 +10,6 @@ import { SiTraccar } from "react-icons/si";
 export default function Home() {
   return (
     <div>
-      <First_Label />
-      <Header />
       <div className="w-full bg-[#F6F7F9]">
 
         <div className="flex gap-[27px] justify-center">
@@ -129,7 +125,7 @@ export default function Home() {
 
                 {/* Box 1 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">Koenigsegg</h2>
@@ -160,7 +156,7 @@ export default function Home() {
 
                 {/* Box 2 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-md:hidden">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">Nissan GT-R</h2>
@@ -191,7 +187,7 @@ export default function Home() {
 
                 {/* Box 3 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-md:hidden">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">Rolls-Royce</h2>
@@ -222,7 +218,7 @@ export default function Home() {
 
                 {/* Box 4 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-md:hidden">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">Nissan GT-R</h2>
@@ -262,7 +258,7 @@ export default function Home() {
 
                 {/* Box 1 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">All New Rush</h2>
@@ -293,7 +289,7 @@ export default function Home() {
 
                 {/* Box 2 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">CR-V</h2>
@@ -324,7 +320,7 @@ export default function Home() {
 
                 {/* Box 3 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">All New Terios</h2>
@@ -355,7 +351,7 @@ export default function Home() {
 
                 {/* Box 4 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">CR-V</h2>
@@ -393,7 +389,7 @@ export default function Home() {
 
                 {/* Box 1 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">MG ZX Exclusice</h2>
@@ -424,7 +420,7 @@ export default function Home() {
 
                 {/* Box 2 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">New MG ZS</h2>
@@ -455,7 +451,7 @@ export default function Home() {
 
                 {/* Box 3 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">MG ZS Excite</h2>
@@ -486,7 +482,7 @@ export default function Home() {
 
                 {/* Box 4 */}
                 <div className="p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between">
+                  <div className="border rounded-lg p-4 h-full flex flex-col justify-between bg-white">
                     <div>
                       <div className="flex justify-between">
                         <h2 className="text-gray-900 title-font text-lg font-medium">New MG ZS</h2>
