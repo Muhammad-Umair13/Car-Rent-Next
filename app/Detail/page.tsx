@@ -168,7 +168,7 @@ const Detail_Car = () => {
                                             </span>
                                         </div>
                                         <p className="leading-relaxed">
-                                        The Nissan GT-R is a sports car with the best design and acceleration, providing both safety and comfort while driving. It's the embodiment of Nissan's outstanding performance, inspired by the race track.
+                                        The Nissan GT-R is a sports car with the best design and acceleration, providing both safety and comfort while driving. Its the embodiment of Nissans outstanding performance, inspired by the race track.
                                         </p>
                                         <div className="flex">
                                             <span className="title-font font-medium text-2xl text-gray-900">
