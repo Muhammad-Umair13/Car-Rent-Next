@@ -12,8 +12,11 @@ const Payment = () => {
 
                 <div>
                     <form>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required className="w-[386px] h-14 rounded-xl" placeholder='Enter Your Name'></input>
+
+                        <div className="mt-[104px] ml-6 ">
+                        <label for="name">Name</label><br/>
+                        <input type="text" id="name" required className="w-[356px] h-14 rounded-xl bg-[#F6F7F9]" placeholder='Enter Your Name'></input>
+                        </div>
 
                         <label></label>
                         <input></input>
