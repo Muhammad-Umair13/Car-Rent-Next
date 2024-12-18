@@ -106,12 +106,26 @@ const Payment = () => {
                     </div>
                 </div>
                 
-                <div className="flex flex-col items-center justify-center py-16 px-3 md:px-0"> <div className="w-full max-w-3xl p-8 bg-white rounded-lg shadow-lg"> <h2 className="text-2xl font-semibold text-center text-blue-600 mb-6">Payment Method</h2> <div className="flex justify-between items-center mb-6"> <div className="flex items-center space-x-2"> <input type="radio" id="creditCard" name="paymentMethod" className="form-radio text-blue-600" /> <label htmlFor="creditCard" className="text-lg font-semibold text-gray-700 flex items-center space-x-2"> <span>Credit Card</span>
+                <div className="flex flex-col items-center justify-center py-16 px-3 md:px-0"> 
+                <div className="w-full max-w-3xl p-8 bg-white rounded-lg shadow-lg"> 
+                <h2 className="text-2xl font-semibold text-center text-blue-600 mb-6">Payment Method</h2> 
+                <div className="flex justify-between items-center mb-6"> <div className="flex items-center space-x-2">
+                 <input type="radio" id="creditCard" name="paymentMethod" className="form-radio text-blue-600" /> 
+                 <label htmlFor="creditCard" className="text-lg font-semibold text-gray-700 flex items-center space-x-2"> 
+                <span>Credit Card</span>
                  {/* <FaCcVisa className="text-2xl text-blue-600" /> */}
                   {/* <FaCcMastercard className="text-2xl text-orange-600" />  */}
-                  </label> </div> <div className="flex items-center space-x-2"> <input type="radio" id="paypal" name="paymentMethod" className="form-radio text-blue-600" /> <label htmlFor="paypal" className="text-lg font-semibold text-gray-700 flex items-center space-x-2"> <span>PayPal</span> 
+                  </label> 
+                  </div> 
+                  <div className="flex items-center space-x-2"> 
+                  <input type="radio" id="paypal" name="paymentMethod" className="form-radio text-blue-600" /> 
+                  <label htmlFor="paypal" className="text-lg font-semibold text-gray-700 flex items-center space-x-2">
+                  <span>PayPal</span> 
                   {/* <FaPaypal className="text-2xl text-blue-600" />  */}
-                  </label> </div> <div className="flex items-center space-x-2"> <input type="radio" id="bitcoin" name="paymentMethod" className="form-radio text-blue-600" /> <label htmlFor="bitcoin" className="text-lg font-semibold text-gray-700 flex items-center space-x-2"> <span>Bitcoin</span>
+                  </label> 
+                  </div> 
+                  <div className="flex items-center space-x-2"> 
+                  <input type="radio" id="bitcoin" name="paymentMethod" className="form-radio text-blue-600" /> <label htmlFor="bitcoin" className="text-lg font-semibold text-gray-700 flex items-center space-x-2"> <span>Bitcoin</span>
                    {/* <FaBitcoin className="text-2xl text-orange-600" />  */}
                    </label> </div> </div> <div className="space-y-4"> <div> <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="cardNumber"> Card Number </label> <input type="text" id="cardNumber" className="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Card Number" /> </div> <div className="grid grid-cols-2 gap-4"> <div> <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="expirationDate"> Expiration Date </label> <input type="text" id="expirationDate" className="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="DD/MM/YY" /> </div> <div> <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="cardHolder"> Card Holder </label> <input type="text" id="cardHolder" className="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Card Holder" /> </div> <div> <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="cvc"> CVC </label> <input type="text" id="cvc" className="w-full px-3 py-2 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="CVC" /> </div> </div> </div> </div> </div>
 
