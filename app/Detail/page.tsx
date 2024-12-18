@@ -88,7 +88,6 @@ const Detail_Car = () => {
                                         <div>
                                             <Image
                                                 alt="picture"
-                                                className=""
                                                 src="/Img/Detail_Car.svg"
                                                 height={492}
                                                 width={360}
@@ -175,7 +174,7 @@ const Detail_Car = () => {
                                                 $80.00
                                             </span>
                                             <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-                                                    Rent Now
+                                                    <a href="Payout">Rent Now</a>
                                             </button>
                                             <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                                                 <svg

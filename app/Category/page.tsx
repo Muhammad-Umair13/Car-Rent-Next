@@ -80,7 +80,7 @@ const Category = () => {
                     </div>
                 </div>
 
-                <div className="bg-gray-100">
+                <div className="bg-gray-100 w-full">
                     <div className="flex items-center justify-center py-16 px-3 max-md:px-0">
                         <div className="flex items-center rounded-lg shadow-lg lg:flex-col">
                             {/* Pick-Up Section */}
@@ -529,7 +529,7 @@ const Category = () => {
                         </div>
 
                         <div className="flex justify-center mt-3">
-                            <Button className="bg-blue-700">Show more car</Button>
+                            <Button className="bg-blue-700 hover:bg-blue-900">Show more car</Button>
                         </div>
 
                     </section>
