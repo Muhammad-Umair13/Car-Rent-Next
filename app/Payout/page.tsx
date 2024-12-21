@@ -149,8 +149,8 @@ const Payment = () => {
                     <div>
 
                     </div>
-                    <div>option1</div>
-                    <div>option2</div>
+                    <div className="w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-5">option1</div>
+                    <div className="w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-5">option2</div>
                 </div>
 
                 <div>payment4</div>
