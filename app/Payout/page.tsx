@@ -120,38 +120,42 @@ const Payment = () => {
                         </div>
 
                         <div>
-                        <form>
-                            <div className="flex">
-                                <div className="mt-5 ml-6 ">
-                                    <label for="name" className="font-semibold text-base">Card Number</label><br />
-                                    <input type="text" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='Card number'></input>
-                                </div>
+                            <form>
+                                <div className="flex">
+                                    <div className="mt-5 ml-6 ">
+                                        <label for="name" className="font-semibold text-base">Card Number</label><br />
+                                        <input type="text" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='Card number'></input>
+                                    </div>
 
-                                <div className="mt-5 ml-6">
-                                    <label for="name" className="font-semibold text-base">Expration Date</label><br />
-                                    <input type="date" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5"></input>
+                                    <div className="mt-5 ml-6">
+                                        <label for="name" className="font-semibold text-base">Expration Date</label><br />
+                                        <input type="date" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5"></input>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex">
-                                <div className="mt-5 ml-6 ">
-                                    <label for="name" className="font-semibold text-base">Card Holder</label><br />
-                                    <input type="text" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='Card holder'></input>
-                                </div>
+                                <div className="flex">
+                                    <div className="mt-5 ml-6 ">
+                                        <label for="name" className="font-semibold text-base">Card Holder</label><br />
+                                        <input type="text" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='Card holder'></input>
+                                    </div>
 
-                                <div className="mt-5 ml-6">
-                                    <label for="name" className="font-semibold text-base">CVC</label><br />
-                                    <input type="number" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='CVC' maxLength={3} minLength={3}></input>
+                                    <div className="mt-5 ml-6">
+                                        <label for="name" className="font-semibold text-base">CVC</label><br />
+                                        <input type="number" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='CVC' maxLength={3} minLength={3}></input>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
+                            </form>
                         </div>
                     </div>
                     <div>
 
                     </div>
                     <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3 flex">
-                        <input type="radio" className="font-semibold text-base size-4 mt-1"/> Paypal
-                        <Image src="/Icons/Paypal.svg" alt='' width={92} height={20} className=""/>
+                        <div>
+                            <input type="radio" className="font-semibold text-base size-4 mt-1" /> Paypal
+                        </div>
+                        <div>
+                            <Image src="/Icons/Paypal.svg" alt='' width={92} height={20} className="" />
+                        </div>
                     </div>
                     <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3">option2</div>
                 </div>
