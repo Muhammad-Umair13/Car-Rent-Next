@@ -129,7 +129,7 @@ const Payment = () => {
 
                                 <div className="mt-5 ml-6">
                                     <label for="name" className="font-semibold text-base">Expration Date</label><br />
-                                    <input type="text" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5"></input>
+                                    <input type="date" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5"></input>
                                 </div>
                             </div>
                             <div className="flex">
