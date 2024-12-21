@@ -154,7 +154,7 @@ const Payment = () => {
                             <input type="radio" className="font-semibold text-base size-4 mt-1" /> Paypal
                         </div>
                         <div>
-                            <Image src="/Icons/Paypal.svg" alt='' width={92} height={20} className="" />
+                            <Image src="/Icons/Paypal.svg" alt='paypal' width={92} height={20}/>
                         </div>
                     </div>
                     <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3">option2</div>
