@@ -149,18 +149,54 @@ const Payment = () => {
                     <div>
 
                     </div>
-                    <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3 flex">
-                        <div>
+                    <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3 flex gap-[600px]">
+                        <div >
                             <input type="radio" className="font-semibold text-base size-4 mt-1" /> Paypal
                         </div>
                         <div>
-                            <Image src="/Icons/Paypal.svg" alt='paypal' width={92} height={20}/>
+                            <Image src="/Icons/Paypal.svg" alt='paypal' width={92} height={20} />
                         </div>
                     </div>
-                    <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3">option2</div>
+                    <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3 flex gap-[600px]">
+                        <div >
+                            <input type="radio" className="font-semibold text-base size-4 mt-1" /> Bitcoin
+                        </div>
+                        <div>
+                            <Image src="/Icons/Bitcoin.svg" alt='Bitcoin' width={92} height={20} />
+                        </div>
+                    </div>
                 </div>
 
-                <div>payment4</div>
+                <div className="h-[484px] rounded-[10px] bg-white mt-8">
+                    <div className="ml-6 pt-4">
+                        <p className="font-bold text-xl">Confirmation</p>
+                        <p className="font-medium text-sm">We are getting to the end. Just few clicks and your rental is ready!</p>
+                    </div>
+                    <div>
+
+                        <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-8 p-3">
+                            <div className="flex gap-3">
+                                <input type="checkbox" className="font-semibold text-base size-4 mt-1" />
+                                <p className="font-semibold text-base">I agree with sending an Marketing and newsletter emails. No spam, promissed!</p>
+                            </div>
+                        </div>
+                        <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3">
+                            <div className="flex gap-3">
+                                <input type="checkbox" className="font-semibold text-base size-4 mt-1" />
+                                <p className="font-semibold text-base">I agree with our terms and conditions and privacy policy.</p>
+                            </div>
+                        </div>
+                        <div className="h-14 w-[140px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3">
+                            <button className="h-14 w-[140px] bg-[#3563E9] text-white rounded-xl font-semibold text-sm">Rent Now</button>
+                        </div>
+
+                        <div className="mt-10 ml-6 space-y-1">
+                            <Image src="/Icons/safety.svg" alt='safety' width={32} height={32}/>
+                            <p className="font-semibold text-base">All your data are safe</p>
+                            <p className="font-medium text-sm text-[#90A3BF]">We are using the most advanced security to provide you the best experience ever.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div>rental summary</div>
         </div>
