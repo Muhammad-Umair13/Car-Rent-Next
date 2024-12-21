@@ -205,10 +205,10 @@ const Payment = () => {
                     <div className="p-6"> <h2 className="text-xl font-bold mb-4 text-gray-900">Rental Summary</h2>
                         <p className="text-gray-600 text-sm mb-4">Prices may change depending on the length of the rental and the price of your rental car.</p>
                         <div className="flex items-center mb-4">
-                            <Image src="/Img/Detail_Car.svg" alt="Nissan GT-R" width={160} height={90} className="rounded-lg" />
+                            <Image src="/Img/Detail_Car1.svg" alt="Nissan GT-R" width={160} height={90} />
                             <div className="ml-4">
                                 <h3 className="text-lg font-semibold text-gray-900">Nissan GT-R</h3>
-                                <div className="flex items-center text-yellow-500">
+                                <div className="flex flex-row items-center text-yellow-500">
                                     <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className="text-gray-300" />
                                     <span className="ml-1 text-gray-600">440+ Reviewer</span>
                                 </div>
@@ -227,7 +227,7 @@ const Payment = () => {
                         <div className="mb-4">
                             <div className="flex justify-between items-center text-gray-700">
                                 <input type="text" className="w-[232px] px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Apply promo code" />
-                                <button className="ml-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Apply now</button>
+                                <button className="ml-2 px-1 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Apply now</button>
                             </div>
                         </div>
                         <div className="flex justify-between text-gray-900 font-bold text-lg">
