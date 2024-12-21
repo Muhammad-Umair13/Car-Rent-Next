@@ -140,7 +140,7 @@ const Payment = () => {
 
                                 <div className="mt-5 ml-6">
                                     <label for="name" className="font-semibold text-base">CVC</label><br />
-                                    <input type="text" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='CVC'></input>
+                                    <input type="number" id="name" required className="w-[356px] h-14 rounded-xl bg-white p-5" placeholder='CVC' maxLength={3} minLength={3}></input>
                                 </div>
                             </div>
                         </form>
