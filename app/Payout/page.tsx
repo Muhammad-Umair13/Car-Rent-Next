@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { FaStar } from "react-icons/fa";
 const Payment = () => {
     return (
         <div className="w-full h-[2240px] bg-[#F6F7F9] flex">
@@ -191,14 +192,52 @@ const Payment = () => {
                         </div>
 
                         <div className="mt-10 ml-6 space-y-1">
-                            <Image src="/Icons/safety.svg" alt='safety' width={32} height={32}/>
+                            <Image src="/Icons/safety.svg" alt='safety' width={32} height={32} />
                             <p className="font-semibold text-base">All your data are safe</p>
                             <p className="font-medium text-sm text-[#90A3BF]">We are using the most advanced security to provide you the best experience ever.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div>rental summary</div>
+
+            <div className="mt-8 ml-8 bg-white w-[392px] h-[560px] rounded-[10px]">
+                <div className="w-[375px] bg-white shadow-lg rounded-lg overflow-hidden">
+                    <div className="p-6"> <h2 className="text-xl font-bold mb-4 text-gray-900">Rental Summary</h2>
+                        <p className="text-gray-600 text-sm mb-4">Prices may change depending on the length of the rental and the price of your rental car.</p>
+                        <div className="flex items-center mb-4">
+                            <Image src="/Img/Detail_Car.svg" alt="Nissan GT-R" width={160} height={90} className="rounded-lg" />
+                            <div className="ml-4">
+                                <h3 className="text-lg font-semibold text-gray-900">Nissan GT-R</h3>
+                                <div className="flex items-center text-yellow-500">
+                                    <FaStar /><FaStar /><FaStar /><FaStar /><FaStar className="text-gray-300" />
+                                    <span className="ml-1 text-gray-600">440+ Reviewer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="mb-4">
+                            <div className="flex justify-between text-gray-700 mb-2">
+                                <span>Subtotal</span>
+                                <span className="font-bold">$80.00</span>
+                            </div>
+                            <div className="flex justify-between text-gray-700 mb-2">
+                                <span>Tax</span>
+                                <span className="font-bold">$0</span>
+                            </div>
+                        </div>
+                        <div className="mb-4">
+                            <div className="flex justify-between items-center text-gray-700">
+                                <input type="text" className="w-[232px] px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Apply promo code" />
+                                <button className="ml-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Apply now</button>
+                            </div>
+                        </div>
+                        <div className="flex justify-between text-gray-900 font-bold text-lg">
+                            <span>Total Rental Price</span>
+                            <span className="text-3xl">$80.00</span>
+                        </div>
+                        <p className="text-gray-600 text-sm mt-2">Overall price and includes rental discount</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
