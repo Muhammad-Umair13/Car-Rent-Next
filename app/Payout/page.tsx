@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const Payment = () => {
     return (
         <div className="w-full h-[2240px] bg-[#F6F7F9] flex">
@@ -149,8 +149,11 @@ const Payment = () => {
                     <div>
 
                     </div>
-                    <div className="w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-5">option1</div>
-                    <div className="w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-5">option2</div>
+                    <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3 flex">
+                        <input type="radio" className="font-semibold text-base size-4 mt-1"/> Paypal
+                        <Image src="/Icons/Paypal.svg" alt='' width={92} height={20} className=""/>
+                    </div>
+                    <div className="h-14 w-[804px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3">option2</div>
                 </div>
 
                 <div>payment4</div>
