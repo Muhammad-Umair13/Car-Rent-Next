@@ -36,7 +36,7 @@ const page = () => {
               {/* Pick-Up Section */}
               <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                 <div className="text-lg font-semibold text-blue-600">Pick-Up</div>
-                <div className="flex flex-wrap gap-8 w-screen">
+                <div className="flex flex-wrap gap-8 w-[500px],m">
                   <div>
                     <label className="block text-gray-500 text-sm mb-1">Locations</label>
                     <select
@@ -68,7 +68,7 @@ const page = () => {
               {/* Drop-Off Section */}
               <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                 <div className="text-lg font-semibold text-blue-600">Drop-Off</div>
-                <div className="flex flex-wrap gap-8 w-screen">
+                <div className="flex flex-wrap gap-8 w-[500px]">
                   <div>
                     <label className="block text-gray-500 text-sm mb-1">Locations</label>
                     <select
@@ -103,7 +103,7 @@ const page = () => {
           <div className="mt-4"> <h3 className="text-xl font-bold">Total Rental Price</h3> <p className="text-2xl font-bold text-blue-600">$80.00</p> </div> </div>
 
         {/* Top 5 Car Rental */}
-        <div className="bg-white p-4 rounded-lg shadow-md">
+        <div className="bg-white p-4 rounded-lg shadow-md h-screen">
 
           {/* <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg"> */}
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Top 5 Car Rental</h2>
@@ -157,7 +157,24 @@ const page = () => {
           </ul>
         </div>
 
-        {/* Recent Transaction */} <div className="col-span-3 bg-white p-4 rounded-lg shadow-md mt-4 lg:mt-0"> <h3 className="text-xl font-bold mb-4">Recent Transactions</h3> <table className="w-full"> <thead> <tr> <th className="text-left">Car Model</th> <th className="text-left">Type</th> <th className="text-left">Date</th> <th className="text-left">Price</th> </tr> </thead> <tbody> <tr> <td>Nissan GT-R</td> <td>Sport Car</td> <td>20 July 2022</td> <td>$80.00</td> </tr> <tr> <td>Honda Civic</td> <td>SUV</td> <td>18 July 2022</td> <td>$60.00</td> </tr> <tr> <td>Toyota Corolla</td> <td>Coupe</td> <td>15 July 2022</td> <td>$50.00</td> </tr> </tbody> </table> </div> </div> </div> </div> </div>
+        {/* Recent Transaction */}
+        <div className="col-span-3 bg-white p-4 rounded-lg shadow-md mt-4 lg:mt-0">
+          <h3 className="text-xl font-bold mb-4">Recent Transactions</h3> <table className="w-full">
+            <thead> <tr> <th className="text-left">Car Model</th> <th className="text-left">Type</th>
+              <th className="text-left">Date</th> <th className="text-left">Price</th> </tr> </thead> <tbody>
+              <tr> <td>Nissan GT-R</td> <td>Sport Car</td> <td>20 July 2022</td> <td>$80.00</td> </tr> <tr>
+                <td>Honda Civic</td> <td>SUV</td> <td>18 July 2022</td> <td>$60.00</td> </tr> <tr>
+                <td>Toyota Corolla</td>
+                <td>Coupe</td>
+                <td>15 July 2022</td>
+                <td>$50.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div> </div>
+    </div>
+    </div>
   )
 }
 
