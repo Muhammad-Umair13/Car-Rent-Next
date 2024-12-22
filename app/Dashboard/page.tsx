@@ -14,7 +14,9 @@ import { CiLogout } from "react-icons/ci";
 const page = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-4"> <div className="flex flex-col lg:flex-row">
-      {/* Main Menu */} <div className="w-full lg:w-1/5 bg-white p-4 rounded-lg shadow-md mb-4 lg:mb-0"> <ul className="space-y-4"> <li className="font-bold text-blue-600 flex gap-2"><CiHome className='size-5' />Dashboard</li>
+      {/* Main Menu */} <div className="w-full lg:w-1/5 bg-white p-4 rounded-lg shadow-md mb-4 lg:mb-0"> 
+      <ul className="space-y-4"> 
+        <li className="font-bold text-white flex gap-2 bg-blue-500 h-10 items-center rounded-lg"><CiHome className='size-5'/>Dashboard</li>
         <li className="flex gap-2"><FaCarAlt className='size-5' />Car Rent</li>
         <li className="flex gap-2"><CgInsights className='size-5' />Insight</li>
         <li className="flex gap-2"><IoChatboxEllipsesOutline className='size-5' />Inbox</li>
@@ -110,15 +112,18 @@ const page = () => {
           {/* <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg"> */}
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Top 5 Car Rental</h2>
           <div className="relative flex items-center justify-center mb-6">
-            <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center">
+            <div className="w-40 h-40 rounded-full bg-blue-900 flex items-center justify-center">
               <span className="text-2xl font-bold">72,030</span>
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-32 h-32 rounded-full bg-white"></div>
+              <div className="w-32 h-32 rounded-full bg-blue-700"></div>
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-24 h-24 rounded-full bg-gray-100"></div>
+              <div className="w-24 h-24 rounded-full bg-blue-500"></div>
             </div>
+            {/* <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-20 h-20 rounded-full bg-white"></div>
+            </div> */}
           </div>
           <ul className="space-2">
             <li className="flex justify-between items-center mb-2">
