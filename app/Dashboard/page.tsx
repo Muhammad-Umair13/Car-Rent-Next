@@ -28,7 +28,9 @@ const page = () => {
 
       {/* Main Content */} <div className="w-full lg:w-4/5 lg:pl-4"> <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
-        {/* Details Rental */} <div className="col-span-2 bg-white p-4 rounded-lg shadow-md"> <div className="mb-4"> <Image src="/map.png" alt="Map" width={500} height={200} className="w-full h-40 object-cover rounded-lg" />
+        {/* Details Rental */}
+        <div className="col-span-2 bg-white p-4 rounded-lg shadow-md"> <div className="mb-4">
+          <Image src="/Img/maps.svg" alt="Map" width={486} height={272} className="justify-center m-auto"/>
         </div>
           <div className="flex items-center mb-4">
             <Image src="/Img/Detail_Car1.svg" alt="Nissan GT-R" width={64} height={64} className="w-16 h-16 rounded-lg mr-4" /> <div> <h2 className="text-xl font-bold">Nissan GT-R</h2> <p className="text-gray-500">Sport Car</p> </div> </div> <div className="grid grid-cols-2 gap-4">
@@ -36,7 +38,7 @@ const page = () => {
               {/* Pick-Up Section */}
               <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                 <div className="text-lg font-semibold text-blue-600">Pick-Up</div>
-                <div className="flex flex-wrap gap-8 w-[500px],m">
+                <div className="flex flex-wrap gap-8 w-[500px]">
                   <div>
                     <label className="block text-gray-500 text-sm mb-1">Locations</label>
                     <select
@@ -172,7 +174,8 @@ const page = () => {
             </tbody>
           </table>
         </div>
-      </div> </div>
+      </div>
+      </div>
     </div>
     </div>
   )
