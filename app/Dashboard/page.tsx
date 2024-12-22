@@ -5,23 +5,107 @@ import { FaCarAlt } from "react-icons/fa";
 import { CgInsights } from "react-icons/cg";
 
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
+import { SlCalender } from "react-icons/sl";
+import { IoMdSettings } from "react-icons/io";
+import { IoIosHelpCircleOutline } from "react-icons/io";
+import { IoInvertModeOutline } from "react-icons/io5";
+import { CiLogout } from "react-icons/ci";
 
 const page = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-4"> <div className="flex flex-col lg:flex-row"> 
-    {/* Main Menu */} <div className="w-full lg:w-1/5 bg-white p-4 rounded-lg shadow-md mb-4 lg:mb-0"> <ul className="space-y-4"> <li className="font-bold text-blue-600 flex"><CiHome className='size-5'/>Dashboard</li> <li>Car Rent</li> <li>Insight</li> <li>Reimburse</li> <li>Inbox</li> <li>Calendar</li> <li>Settings</li> <li>Help & Center</li> <li>Dark Mode</li> <li>Log Out</li> </ul> </div> 
-    
-    {/* Main Content */} <div className="w-full lg:w-4/5 lg:pl-4"> <div className="grid grid-cols-1 lg:grid-cols-3 gap-4"> 
-      
-      {/* Details Rental */} <div className="col-span-2 bg-white p-4 rounded-lg shadow-md"> <div className="mb-4"> <Image src="/map.png" alt="Map" width={500} height={200} className="w-full h-40 object-cover rounded-lg" /> 
-    </div>
-    <div className="flex items-center mb-4"> 
-    <Image src="/Img/Detail_Car1.svg" alt="Nissan GT-R" width={64} height={64} className="w-16 h-16 rounded-lg mr-4" /> <div> <h2 className="text-xl font-bold">Nissan GT-R</h2> <p className="text-gray-500">Sport Car</p> </div> </div> <div className="grid grid-cols-2 gap-4"> <div> <h3 className="font-bold">Pick-Up</h3> <p>Location: Kota Semarang</p> <p>Date: 20 July 2022</p> <p>Time: 07:00</p> </div> <div> <h3 className="font-bold">Drop-Off</h3> <p>Location: Kota Semarang</p> <p>Date: 21 July 2022</p> <p>Time: 01:00</p> </div> </div> <div className="mt-4"> <h3 className="text-xl font-bold">Total Rental Price</h3> <p className="text-2xl font-bold text-blue-600">$80.00</p> </div> </div> 
-    
-    {/* Top 5 Car Rental */}
-     <div className="bg-white p-4 rounded-lg shadow-md"> 
-      
-     {/* <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg"> */}
+    <div className="min-h-screen bg-gray-100 p-4"> <div className="flex flex-col lg:flex-row">
+      {/* Main Menu */} <div className="w-full lg:w-1/5 bg-white p-4 rounded-lg shadow-md mb-4 lg:mb-0"> <ul className="space-y-4"> <li className="font-bold text-blue-600 flex gap-2"><CiHome className='size-5' />Dashboard</li>
+        <li className="flex gap-2"><FaCarAlt className='size-5' />Car Rent</li>
+        <li className="flex gap-2"><CgInsights className='size-5' />Insight</li>
+        <li className="flex gap-2"><IoChatboxEllipsesOutline className='size-5' />Inbox</li>
+        <li className="flex gap-2"><SlCalender className='size-5' />Calendar</li>
+        <li className="flex gap-2 pt-10"><IoMdSettings className='size-5' />Settings</li>
+        <li className="flex gap-2"><IoIosHelpCircleOutline className='size-5' />Help & Center</li>
+        <li className="flex gap-2"><IoInvertModeOutline className='size-5' />Dark Mode</li>
+        <li className="flex gap-2 pt-60"><CiLogout className='size-5' />Log Out</li>
+      </ul>
+      </div>
+
+      {/* Main Content */} <div className="w-full lg:w-4/5 lg:pl-4"> <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+        {/* Details Rental */} <div className="col-span-2 bg-white p-4 rounded-lg shadow-md"> <div className="mb-4"> <Image src="/map.png" alt="Map" width={500} height={200} className="w-full h-40 object-cover rounded-lg" />
+        </div>
+          <div className="flex items-center mb-4">
+            <Image src="/Img/Detail_Car1.svg" alt="Nissan GT-R" width={64} height={64} className="w-16 h-16 rounded-lg mr-4" /> <div> <h2 className="text-xl font-bold">Nissan GT-R</h2> <p className="text-gray-500">Sport Car</p> </div> </div> <div className="grid grid-cols-2 gap-4">
+            <div>
+              {/* Pick-Up Section */}
+              <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
+                <div className="text-lg font-semibold text-blue-600">Pick-Up</div>
+                <div className="flex flex-wrap gap-8 w-screen">
+                  <div>
+                    <label className="block text-gray-500 text-sm mb-1">Locations</label>
+                    <select
+                      className="border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      style={{ width: "126px", height: "48px" }}
+                    >
+                      <option>Select your city</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-gray-500 text-sm mb-1">Date</label>
+                    <input
+                      type="date"
+                      className="border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      style={{ width: "126px", height: "48px" }}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-gray-500 text-sm mb-1">Time</label>
+                    <select
+                      className="border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      style={{ width: "126px", height: "48px" }}
+                    >
+                      <option>Select your time</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              {/* Drop-Off Section */}
+              <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
+                <div className="text-lg font-semibold text-blue-600">Drop-Off</div>
+                <div className="flex flex-wrap gap-8 w-screen">
+                  <div>
+                    <label className="block text-gray-500 text-sm mb-1">Locations</label>
+                    <select
+                      className="border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      style={{ width: "126px", height: "48px" }}
+                    >
+                      <option>Select your city</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-gray-500 text-sm mb-1">Date</label>
+                    <input
+                      type="date"
+                      className="border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      style={{ width: "126px", height: "48px" }}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-gray-500 text-sm mb-1">Time</label>
+                    <select
+                      className="border border-gray-300 rounded-md text-sm text-gray-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                      style={{ width: "126px", height: "48px" }}
+                    >
+                      <option>Select your time</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-4"> <h3 className="text-xl font-bold">Total Rental Price</h3> <p className="text-2xl font-bold text-blue-600">$80.00</p> </div> </div>
+
+        {/* Top 5 Car Rental */}
+        <div className="bg-white p-4 rounded-lg shadow-md">
+
+          {/* <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg"> */}
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Top 5 Car Rental</h2>
           <div className="relative flex items-center justify-center mb-6">
             <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center">
@@ -72,8 +156,8 @@ const page = () => {
             </li>
           </ul>
         </div>
-      
-       {/* Recent Transaction */} <div className="col-span-3 bg-white p-4 rounded-lg shadow-md mt-4 lg:mt-0"> <h3 className="text-xl font-bold mb-4">Recent Transactions</h3> <table className="w-full"> <thead> <tr> <th className="text-left">Car Model</th> <th className="text-left">Type</th> <th className="text-left">Date</th> <th className="text-left">Price</th> </tr> </thead> <tbody> <tr> <td>Nissan GT-R</td> <td>Sport Car</td> <td>20 July 2022</td> <td>$80.00</td> </tr> <tr> <td>Honda Civic</td> <td>SUV</td> <td>18 July 2022</td> <td>$60.00</td> </tr> <tr> <td>Toyota Corolla</td> <td>Coupe</td> <td>15 July 2022</td> <td>$50.00</td> </tr> </tbody> </table> </div> </div> </div> </div> </div>
+
+        {/* Recent Transaction */} <div className="col-span-3 bg-white p-4 rounded-lg shadow-md mt-4 lg:mt-0"> <h3 className="text-xl font-bold mb-4">Recent Transactions</h3> <table className="w-full"> <thead> <tr> <th className="text-left">Car Model</th> <th className="text-left">Type</th> <th className="text-left">Date</th> <th className="text-left">Price</th> </tr> </thead> <tbody> <tr> <td>Nissan GT-R</td> <td>Sport Car</td> <td>20 July 2022</td> <td>$80.00</td> </tr> <tr> <td>Honda Civic</td> <td>SUV</td> <td>18 July 2022</td> <td>$60.00</td> </tr> <tr> <td>Toyota Corolla</td> <td>Coupe</td> <td>15 July 2022</td> <td>$50.00</td> </tr> </tbody> </table> </div> </div> </div> </div> </div>
   )
 }
 
