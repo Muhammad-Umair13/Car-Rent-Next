@@ -113,7 +113,7 @@ const page = () => {
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Top 5 Car Rental</h2>
           <div className="relative flex items-center justify-center mb-6">
             <div className="w-40 h-40 rounded-full bg-blue-900 flex items-center justify-center">
-              <span className="text-2xl font-bold">72,030</span>
+              <span className="text-2xl font-bold z-10 text-white">72,030</span>
             </div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-32 h-32 rounded-full bg-blue-700"></div>
@@ -121,9 +121,6 @@ const page = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-24 h-24 rounded-full bg-blue-500"></div>
             </div>
-            {/* <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 rounded-full bg-white"></div>
-            </div> */}
           </div>
           <ul className="space-2">
             <li className="flex justify-between items-center mb-2">

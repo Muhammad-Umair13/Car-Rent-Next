@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaStar } from "react-icons/fa";
+import Link from "next/Link"
 const Payment = () => {
     return (
         <div className="w-full h-[2240px] bg-[#F6F7F9] flex">
@@ -188,7 +189,7 @@ const Payment = () => {
                             </div>
                         </div>
                         <div className="h-14 w-[140px] bg-[#F6F7F9] ml-6 rounded-[10px] mt-3 p-3">
-                            <button className="h-14 w-[140px] bg-[#3563E9] text-white rounded-xl font-semibold text-sm">Rent Now</button>
+                            <button className="h-14 w-[140px] bg-[#3563E9] text-white rounded-xl font-semibold text-sm"><Link href="Dashboard">Rent Now</Link></button>
                         </div>
 
                         <div className="mt-10 ml-6 space-y-1">
