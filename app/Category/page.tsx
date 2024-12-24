@@ -82,7 +82,7 @@ const Category = () => {
 
                 <div className="bg-gray-100 w-full">
                     <div className="flex items-center justify-center py-16 px-3 max-md:px-0">
-                        <div className="flex items-center rounded-lg shadow-lg lg:flex-col">
+                        <div className="flex flex-row items-center rounded-lg shadow-lg max-lg:flex-col">
                             {/* Pick-Up Section */}
                             <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                                 <div className="text-lg font-semibold text-blue-600">Pick-Up</div>
@@ -159,9 +159,9 @@ const Category = () => {
                     </div>
 
 
-                    <section className="text-gray-600 body-font w-[78%] ml-20 max-lg:m-0 max-md:ml-20">
+                    <section className="text-gray-600 body-font w-[78%] ml-20 max-lg:m-0 max-md:ml-5">
                         <div className="container mx-auto">
-                            <div className="flex justify-between -m-4 lg:flex-row max-md:flex-col">
+                            <div className="flex justify-between lg:flex-row max-md:flex-col ">
 
                                 {/* Box 1 */}
                                 <div className="p-4" style={{ width: '300px', height: '388px' }}>
