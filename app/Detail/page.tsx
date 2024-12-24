@@ -196,7 +196,7 @@ const Detail_Car = () => {
 
                     </div>
 
-                    <section className="text-gray-600 body-font w-[78%] ml-20">
+                    <section className="text-gray-600 body-font w-[78%] ml-20 max-md:ml-5">
                         <div className="container mx-auto">
                             <div className="flex justify-between -m-4 max-lg:flex-col">
 
