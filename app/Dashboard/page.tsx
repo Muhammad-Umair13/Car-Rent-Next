@@ -13,8 +13,10 @@ import { CiLogout } from "react-icons/ci";
 
 const page = () => {
   return (
-    <div className="min-h-screen bg-gray-100 p-4"> <div className="flex flex-col lg:flex-row">
-      {/* Main Menu */} <div className="w-full lg:w-1/5 bg-white p-4 rounded-lg shadow-md mb-4 lg:mb-0"> 
+    <div className="min-h-screen bg-gray-100 p-4">
+       <div className="flex flex-col lg:flex-row">
+      {/* Main Menu */} 
+      <div className="w-full lg:w-1/5 bg-white p-4 rounded-lg shadow-md mb-4 lg:mb-0 lg:block md:hidden max-sm:hidden"> 
       <ul className="space-y-4"> 
         <li className="font-bold text-white flex gap-2 bg-blue-500 h-10 items-center rounded-lg"><CiHome className='size-5'/>Dashboard</li>
         <li className="flex gap-2"><FaCarAlt className='size-5' />Car Rent</li>
@@ -40,7 +42,7 @@ const page = () => {
               {/* Pick-Up Section */}
               <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                 <div className="text-lg font-semibold text-blue-600">Pick-Up</div>
-                <div className="flex flex-wrap gap-8 w-[500px]">
+                <div className="flex flex-wrap gap-8 w-full max-sm:flex-col">
                   <div>
                     <label className="block text-gray-500 text-sm mb-1">Locations</label>
                     <select
@@ -72,7 +74,7 @@ const page = () => {
               {/* Drop-Off Section */}
               <div className="flex flex-col space-y-2 p-3 rounded-lg shadow-sm bg-white">
                 <div className="text-lg font-semibold text-blue-600">Drop-Off</div>
-                <div className="flex flex-wrap gap-8 w-[500px]">
+                <div className="flex flex-wrap gap-8 w-full max-sm:flex-col">
                   <div>
                     <label className="block text-gray-500 text-sm mb-1">Locations</label>
                     <select
@@ -107,7 +109,7 @@ const page = () => {
           <div className="mt-4"> <h3 className="text-xl font-bold">Total Rental Price</h3> <p className="text-2xl font-bold text-blue-600">$80.00</p> </div> </div>
 
         {/* Top 5 Car Rental */}
-        <div className="bg-white p-4 rounded-lg shadow-md h-screen">
+        <div className="bg-white p-4 rounded-lg shadow-md h-screen max-sm:row-start-2">
 
           {/* <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg"> */}
           <h2 className="text-2xl font-bold mb-6 text-gray-900">Top 5 Car Rental</h2>
