@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaStar } from "react-icons/fa";
-import Link from "next/Link"
 const Payment = () => {
     return (
         <div>
@@ -296,7 +295,7 @@ const Payment = () => {
 
                             <div className="mt-6">
                                 <button className="h-14 w-full lg:w-[140px] bg-[#3563E9] text-white rounded-xl font-semibold text-sm">
-                                    <Link href="Dashboard">Rent Now</Link>
+                                    <a href="Dashboard">Rent Now</a>
                                 </button>
                             </div>
 
