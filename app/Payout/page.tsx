@@ -8,7 +8,7 @@ const Payment = () => {
                 <div className="w-full bg-[#F6F7F9] flex flex-col lg:flex-row lg:space-x-8 lg:h-[2240px]">
 
                     {/* summary details */}
-                    <div className="mt-8 ml-8 bg-white w-[392px] h-[560px] rounded-[10px]">
+                    <div className="mt-8 ml-8 bg-white w-[392px] h-[560px] rounded-[10px] max-xs:ml-0">
                         <div className="w-[375px] bg-white shadow-lg rounded-lg overflow-hidden">
                             <div className="p-6"> <h2 className="text-xl font-bold mb-4 text-gray-900">Rental Summary</h2>
                                 <p className="text-gray-600 text-sm mb-4">Prices may change depending on the length of the rental and the price of your rental car.</p>
